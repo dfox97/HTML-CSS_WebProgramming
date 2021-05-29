@@ -1,0 +1,443 @@
+
+/*******************************************/
+/*              Basic setup                */
+/*******************************************/
+
+html,body{
+    background-color: #fff;
+    color: #555;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+
+}
+
+/*******************************************/
+/*             REUSABLE                     COMPONENTS                 */
+/*******************************************/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    padding: 1px;
+    
+}
+.skillsrow{
+    max-width: 1140px;
+    width: 100%;
+    padding: 0px;
+    display: block;
+    margin: 0 auto;
+}
+.wrapped-row-2{
+    background-color: #f4f4f4;
+    padding: 1px;
+    
+
+}
+.longText{
+    max-width: 1140px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1px;
+}
+/*******************************************/
+/*          Header Contents                */
+/*******************************************/
+
+h1,
+h2,
+h3{
+    font-weight: 400;
+    
+}
+h1{
+    
+    font-size: 300%;
+    margin: 0;
+    
+}
+h2{
+    font-size: 150%;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 100%;
+    padding: 0;
+    margin: 0%;
+}
+header{
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+}
+
+header:after{
+    content:'';
+    display: block;
+    clear: both;
+
+}
+.main-header{
+    text-align: center;
+    padding-top: 20%;
+    margin: 0;
+    width: 100%;
+    color: rgb(255, 255, 255)
+}
+
+
+/*******************************************/
+/* MAIN NAVIGATION*/
+/*******************************************/
+.main-nav{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    margin: 0px;
+    background-color: #5b5c5c;
+    position: fixed;
+    z-index: 500;
+}
+
+.main-nav li{
+    display: inline-block;
+    padding: 10px;
+    margin:15px 40px;
+    
+}
+.main-nav a:link,
+.main-nav a:visited{
+    color:#fff ;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+.main-nav a:hover,
+.main-nav a:active{
+    border-bottom: 2px solid #22e62c;
+}
+
+/*******************************************/
+/*                 CARD                    */
+/*******************************************/
+
+.card{
+    width: 100%;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
+    padding: 15px;
+    display: flex;
+    margin-left: 20%;
+    max-width: 700px;
+    margin-bottom: 0;
+    margin-top: 15px;
+ 
+}
+.left-img{
+    font-size: 20px;
+    margin-top: 5%;
+    flex: 1;
+}
+.rightTable{
+    margin-right: 20px;
+    font-size: 14px;
+}
+.rightTable li{
+    list-style: none;
+}
+.rightTable ul{
+    list-style: none;
+}
+.contactInfo{
+    text-align: center;
+}
+.personData{
+    margin: 0%;
+    padding: 0%;
+}
+.cardtitle{
+    margin-top: 1px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+.left-img img{
+    border-radius: 50%;
+    margin-left: 25%;
+    width: 50%;
+}
+ 
+
+/*******************************************/
+/* Skills Table*/
+/******************************************/
+.skills{
+    padding: 10;
+    margin-left: 0;
+    margin-bottom: 15px;
+    width: 100%;
+}
+table{
+    width: 100%;
+    background: #e4e4e4;
+    color: #020202;
+    
+  }
+  thead tr td{
+    font-weight:400;
+    text-align:center;
+  }
+  thead{
+    background:#aaaaaa;
+  }
+  tr{
+    text-align:left;
+    overflow:hidden;
+  }
+  td{
+    padding:5px 10px;
+    border-bottom:solid 2px #f0f0f0;
+    width: 100px;
+  }
+  
+  .bar{
+    width:200px;
+    height:20px;
+    border:solid 3px #3F4244;
+    border-radius:3px;
+    margin: 15px 5px;
+    overflow:hidden;
+    background: #f0f0f0;
+  }
+  .fill{
+    max-width:100%;
+    height:100%;
+  }
+  .fill{
+    width:0%;
+    background-color:#30ca30;
+    border-radius:1px;
+    
+  }
+  .fill-mid{
+    max-width:100%;
+    height:100%;
+    background-color: rgb(253, 127, 8);
+  }
+  .fill-low{
+    max-width:100%;
+    height:100%;
+    background-color: crimson;
+  }
+  .percent{
+    top:19px;
+    margin-left:5px;
+    margin-right:10px;
+    position:relative;
+    float:left;
+  }
+  .border{
+    border:solid 3px #898c8d;
+    border-radius:3px;
+    width: 97%;
+  }
+/*******************************************/
+/*              Media queries              */
+/*******************************************/
+/*larger tablets*/
+@media only screen and (max-width: 1200px){
+    .card{
+        margin-left: 15%;
+    }
+}
+/* Medium tablet to big tablet: from to 1024px */
+@media only screen and (max-width: 1024px) {
+    body { font-size: 14px; }
+    .card{
+        margin-left: 15%;
+    }
+    .cardtitle{
+        margin-top: 1px;
+        margin-bottom: 0px;
+        text-align: center;
+    
+    }
+    .left-img img{
+        border-radius: 50%;
+        margin-left: 25%;
+        width: 50%;
+    }
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .wrapped-main{
+        padding: 0;
+        margin: 0px;
+    }
+    footer{
+        font-size: 14px;
+    }
+}
+/* iphone x landscape size */
+@media only screen and (max-width: 824px) {
+    .card{
+       
+        width: 100%;
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
+        padding: 15px;
+        display: flex;
+        margin-left: 20%;
+        max-width: 400px;
+        margin-bottom: 0;
+        margin-top: 15px;
+        
+    }
+    .row{ 
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .longText{
+        font-size: 15px;
+    }
+    .main-nav { display: contents;
+    font-size: 18px; }
+
+    .main-header{
+        padding:0;
+        font-size: 25px;
+        padding-top: 5%;
+
+    }
+    .sub-header{
+        /*color: #020202;*/
+        font-weight: bolder;
+    }
+    
+    h1 { font-size: 200%; 
+    /*color: #020202;*/
+    font-weight: bolder;}
+    h2 { font-size: 150%; }
+    
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .wrapped-main{
+        padding: 0;
+        margin: 0px;
+    }
+    
+    .backimage{
+        background-size: auto 1000px;
+        background-position: top center;
+        background-attachment: fixed;
+    }
+}
+/* Small phones: from 570 to 481px
+landscape considered */
+@media only screen and (max-width: 570px){
+    .main-header{
+        padding-top: 5%;
+        font-size: 20px;
+        padding-left: 0;
+    }
+    .main-nav li{
+        margin: 10px;
+    }
+    .card{
+        width: 100%;
+        height: 250px;
+        margin-left: 0;
+        padding: 0;
+        max-width: 560px;
+    }
+}   
+/* Small phones: from 375 to 480px
+landscape considered */
+@media only screen and (max-width: 480px) 
+{
+    body { font-size: 12px; }
+    .card{
+      width: 100%;
+      height: 350px;
+      margin-left: 0;
+      padding: 0;
+    }
+    .rightTable{
+        float: left;
+        margin-right: 0;
+
+    }
+    .cardtitle{
+        font-size: 16px;
+    }
+    .left-img{
+        margin-left: 0;
+        margin-right: 5px;
+        
+    }
+   .ContactInfo{
+       font-size: 15px;
+       margin-right: 50px;
+   }
+   .personData{
+       font-size: 12px;
+       padding:1%;
+   }
+   .percent{
+    margin-bottom: 5%;
+   }
+   .percent{
+    top:0px;
+}
+   
+   footer{
+    font-size: 12px;
+    }
+}
+
+/* Small phones: from 0 to 375px */
+@media only screen and (max-width: 375px){
+    .main-header{
+        padding-top: 5%;
+        font-size: 18px;
+        padding: 0;
+    }
+    .main-nav a:link,
+    .main-nav a:visited{
+    font-size: 15px;
+    }
+    .skillsrow{
+        max-width: 300px;
+    }
+    .bar{
+        width: 100px;
+    }
+    .card{
+        height: 300px;
+    }
+    .percent{
+        top:0px;
+    }
+}
+
